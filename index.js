@@ -4,6 +4,7 @@ require("dotenv").config();
 const EventSource = require("eventsource");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
 const port = process.env.PORT || 3000;
 
 let dataArray = [];
@@ -53,8 +54,6 @@ const getData = async (symbol, id) => {
     }
   };
 };
-// addSymbol("EUR/USD:HSFX");
-// getData("EUR/USD:HSFX");
 
 app.post("/post", (req, res) => {
   const symbol = req.body.symbol;
