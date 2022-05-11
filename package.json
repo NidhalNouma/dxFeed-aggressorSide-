@@ -1,0 +1,16 @@
+{
+  "name": "dxfeed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nidhal Nouma",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "eventsource": "^2.0.1",
+    "express": "^4.18.1"
+  }
+}
